@@ -37,4 +37,5 @@ CMakelists.txt
 README
 fdf
 test_maps
+.idea/
 
