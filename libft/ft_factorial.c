@@ -17,7 +17,7 @@ uintmax_t	factorial(uintmax_t n)
 	if (n == 1)
 		return (1);
 	else
-		return n * factorial(n - 1);
+		return (n * factorial(n - 1));
 }
 
 double		dfactorial(double n)
@@ -25,7 +25,7 @@ double		dfactorial(double n)
 	if (n == 1.0)
 		return (1.0);
 	else
-		return n * dfactorial(n - 1.0);
+		return (n * dfactorial(n - 1.0));
 }
 
 uintmax_t	summorial(uintmax_t n)
@@ -33,7 +33,7 @@ uintmax_t	summorial(uintmax_t n)
 	if (n == 1)
 		return (1);
 	else
-		return n + summorial(n - 1);
+		return (n + summorial(n - 1));
 }
 
 double		dsummorial(double n)
@@ -41,5 +41,5 @@ double		dsummorial(double n)
 	if (n == 1.0)
 		return (1.0);
 	else
-		return n + dsummorial(n - 1.0);
+		return (n + dsummorial(n - 1.0));
 }
