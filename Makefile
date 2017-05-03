@@ -68,7 +68,7 @@ clean:
 cleanmlx:
 		@make clean -C ./minilibx_macos
 fclean: clean
-	@rm -f $(PUSH_SWAP) $(CHECKER) $(LIBRARY) a.out test
+	@rm -f $(PUSH_SWAP) $(CHECKER) $(LIBRARY) a.out test fdf
 	@make fclean -C ./libft
 	@make fclean -C ./libraries/ft_printf
 

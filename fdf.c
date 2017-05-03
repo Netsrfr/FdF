@@ -14,16 +14,15 @@
 
 int	ft_key_press(int key, void *param)
 {
-	param = 0;
 	if (key == 53)
 		exit(0);
-	printf("key value = %d\n", key);
+	param = 0;
 	return (0);
 }
 
 int	ft_expose(t_nfo info)
 {
-	ft_isometric(info.input, info.map, (M_PI / 180) * 25);
+	ft_drive_y(info.input, info.map, info.mlx, info.window);
 	return (0);
 }
 

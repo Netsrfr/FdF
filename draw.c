@@ -124,6 +124,8 @@ int		ft_draw(t_crd **input, t_mp d)
 	ft_drive_y(input, d, mlx, window);
 	info.input = input;
 	info.map = d;
+	info.mlx = mlx;
+	info.window = window;
 	mlx_key_hook(window, ft_key_press, 0);
 	mlx_expose_hook(window, ft_expose, &info);
 	mlx_loop(mlx);

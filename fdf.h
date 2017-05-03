@@ -56,6 +56,8 @@ typedef struct			s_nfo
 {
 	t_crd	**input;
 	t_mp	map;
+	void	*mlx;
+	void	*window;
 }						t_nfo;
 
 int						ft_key_press(int key, void *param);
