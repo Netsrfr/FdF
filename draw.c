@@ -119,7 +119,6 @@ int		ft_draw(t_crd **input, t_mp d)
 
 	mlx = mlx_init();
 	window = mlx_new_window(mlx, WIN_W, WIN_H, "FdF");
-	printf("0,0 = %f | 0,1 = %f\n1,0 = %f | 1,1 = %f", input[1][0].ord, input[1][1].ord, input[2][0].ord, input[2][1].ord);
 	ft_scale(input, d);
 	ft_isometric(input, d, (M_PI / 180) * 25);
 	ft_drive_y(input, d, mlx, window);
