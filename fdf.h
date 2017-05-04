@@ -20,8 +20,8 @@
 # include "libraries/ft_printf/ft_printf.h"
 # include "minilibx_macos/mlx.h"
 # include <math.h>
-# define WIN_H	1440
-# define WIN_W	2560
+# define WIN_H	1240
+# define WIN_W	2360
 # define ME(x,y) (*map < x || *map > y)
 # define MI(x,y) (*map >= x && *map <= y)
 
