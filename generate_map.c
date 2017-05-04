@@ -21,11 +21,11 @@ t_crd	**ft_parse_row(char **map, t_crd **i, t_mp *d)
 			i[d->h][d->w].alt = (int)ft_atoi(map);
 			i[d->h][d->w].axis = d->w;
 			i[d->h][d->w].ord = d->h;
-			if (i[d->h][d->w].alt > 0)
+			if (i[d->h][d->w].alt >= 0)
 				if (d->ul < (int)(i[d->h][d->w].alt - i[d->h][d->w].ord))
 					d->ul = (int)(i[d->h][d->w].alt - i[d->h][d->w].ord);
 			if (i[d->h][d->w].alt < 0)
-				if (d->ul < (int)fabs(i[d->h][d->w].ord + i[d->h][d->w].alt))
+				if (d->ll < (int)fabs(i[d->h][d->w].ord + i[d->h][d->w].alt))
 					d->ll = (int)fabs(i[d->h][d->w].ord + i[d->h][d->w].alt);
 		}
 		if (**map == ',')
@@ -46,8 +46,11 @@ t_crd	**ft_parse_map(char *map, t_mp *d)
 	t_crd	**input;
 
 	input = ft_init_coords(*d);
+	d->h = 0;
 	while (d->h < d->height)
 	{
+		while (*map == ' ')
+			map++;
 		input = ft_parse_row(&map, input, d);
 		map++;
 		d->w = 0;

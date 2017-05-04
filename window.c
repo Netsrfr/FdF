@@ -38,7 +38,6 @@ void		ft_margins(t_crd **input, t_mp d, int scale)
 {
 	d.w = 0;
 	d.h = 0;
-	d.v_range = d.v_range + d.ul * scale;
 	while (d.h < d.height)
 	{
 		while (d.w < d.width)

@@ -33,7 +33,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-CMakelists.txt
 README
 fdf
 test_maps
